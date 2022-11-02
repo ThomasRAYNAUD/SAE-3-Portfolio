@@ -1,0 +1,603 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    min-height: 200vh;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.7s;
+    padding: 40px 100px;
+    z-index: 999;
+}
+.header-js{
+    padding: 5px 100px;
+    background-color: #fff;
+}
+.logo{
+    font-size: 26px;
+    text-transform: uppercase;
+    text-decoration: 0;
+    font-weight: bold;
+    color: #fff;
+}
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li {
+    position: relative;
+    list-style: none;
+}
+header ul li a {
+    margin: 0 15px;
+    text-decoration: 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+.back {
+    height: 100vh;
+    background: linear-gradient(#000,transparent),url("img.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding:25% 0 ;
+}
+
+.style1{
+	border :0;
+  height: 2px;
+  background: rgb(255, 255, 255);
+  width:8%;
+  position: relative;
+  left: 37.5%;
+}
+
+.container2{
+    height: 50vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titre {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.container2 p{
+    color: #fff;
+    width: 80%;
+    text-align: justify;
+    font-size: 20px;
+}
+.header-js a {
+    color:#000;
+    font-weight: bold;
+}
+
+html {
+    scroll-behavior: smooth !important;
+}
+section {
+    height: 100%;
+    padding-top: 15px;
+    padding-left:30px ;
+    padding-right:30px ;
+    padding-bottom: 15px;
+    background-color: rgb(196, 196, 196);
+  }
+  
+  section:nth-child(odd) {
+    background-color: #1D1D1D;
+  }
+
+
+
+  /*div joli*************************************************/
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 8;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(53, 53, 53, 0.534);
+  }
+
+  .modal-content {
+    margin: 50px auto;
+    border: 1px solid #999;
+    width: 80%;
+  }
+
+  .img2{
+    display:block;
+    width: 40%;
+  }
+
+  .img3{
+    display:block;
+    width: 75%;
+  }
+
+  h2,p {
+    margin: 0 0 20px;
+    font-weight: 400;
+    color: #999;
+  }
+
+  span {
+    color: #666;
+    display: block;
+    padding: 0 0 5px;
+  }
+
+  form {
+    padding: 25px;
+    margin: 25px;
+    box-shadow: 0 2px 5px #f5f5f5;
+    background: #eee;
+  }
+
+  input,textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #1c87c9;
+    outline: none;
+  }
+
+  .contact-form button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #1c87c9;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  button.buttonReseau {
+    background: none;
+    border-top: none;
+    outline: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    position: relative;
+    bottom: 10px;
+    padding-left: 21px;
+    padding-right: 21px;
+    cursor: pointer;
+    font-size: 120%;
+    color: white;
+  }
+  button.buttonTelecoms {
+    background: none;
+    border-top: none;
+    outline: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    position: relative;
+    bottom: 10px;
+    padding-left: 21px;
+    padding-right: 21px;
+    cursor: pointer;
+    font-size: 120%;
+    color: white;
+  }
+  button.buttonProg {
+    background: none;
+    border-top: none;
+    outline: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    position: relative;
+    bottom: 10px;
+    padding-left: 21px;
+    padding-right: 21px;
+    cursor: pointer;
+    font-size: 120%;
+    color: white;
+  }
+  button.buttonCyber {
+    background: none;
+    border-top: none;
+    outline: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    position: relative;
+    bottom: 10px;
+    padding-left: 21px;
+    padding-right: 21px;
+    cursor: pointer;
+    font-size: 120%;
+    color: white;
+  }
+
+  button.buttonReseau:hover {
+    color: yellow;
+  }
+
+  button.buttonReseau::selection{
+    color: yellow;
+}
+button.buttonTelecoms:hover {
+  color: rgb(255, 0, 81);
+}
+
+button.buttonTelecoms::selection{
+  color: rgb(255, 0, 81);
+}
+button.buttonProg:hover {
+  color: rgb(0, 170, 255);
+}
+
+button.buttonProg::selection{
+  color: rgb(0, 170, 255);
+}
+button.buttonCyber:hover {
+  color: rgb(0, 255, 0);
+}
+
+button.buttonCyber::selection{
+  color: rgb(0, 255, 0);
+}
+
+
+  .fondReseau { /*fond de la case pop-up*/
+    background-color: #1D1D1D;
+    border-top: 2px solid yellow;
+    margin-left: 70px;
+    margin-right: 70px;
+    width: 300px;
+    box-shadow: 1px 1px 8px  rgb(0, 0, 0);
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 10px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.fondTelecoms {
+  background-color: #1D1D1D;
+  border-top: 2px solid rgb(255, 0, 81);
+  margin-left: 70px;
+  margin-right: 70px;
+  width: 300px;
+  box-shadow: 1px 1px 8px  rgb(0, 0, 0);
+  color: aliceblue;
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 10px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.fondProg {
+  background-color: #1D1D1D;
+  border-top: 2px solid rgb(0, 170, 255);
+  margin-left: 70px;
+  margin-right: 70px;
+  width: 300px;
+  box-shadow: 1px 1px 8px  rgb(0, 0, 0);
+  color: aliceblue;
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 10px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.fondCyber {
+  background-color: #1D1D1D;
+  border-top: 2px solid rgb(0, 255, 0);
+  margin-left: 70px;
+  margin-right: 70px;
+  display: block;
+  width: 300px;
+  box-shadow: 1px 1px 8px  rgb(0, 0, 0);
+  color: aliceblue;
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 10px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.netReseau{
+  padding-top: 23px;
+  text-align: center;
+    color: yellow;
+    font-size: 15px;
+}
+.netTelecoms{
+  padding-top: 23px;
+text-align: center;
+    color: rgb(255, 0, 81);
+    font-size: 15px;
+}
+.netProg{
+  padding-top: 23px;
+text-align: center;
+    color: rgb(0, 170, 255);
+    font-size: 15px;
+}
+.netCyber{
+  padding-top: 23px;
+text-align: center;
+    color: rgb(0, 255, 0);
+    font-size: 15px;
+}
+
+.txt {
+    margin-top: -5px;
+    margin-left: 23px;
+    color: rgb(136, 135, 135);
+}
+
+.titlepart1{
+  font-size: 35px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.titlepart2{
+  font-size: 35px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+#propos{
+  background-color: rgb(249, 249, 249);
+}
+
+#diplome{
+  background-color: rgb(249, 249, 249);
+}
+
+#projet{
+  background-color: rgb(249, 249, 249);
+  text-align: center;
+  justify-content: center;
+}
+
+#langues{
+  background-color: rgb(249, 249, 249);
+  text-align: center;
+  justify-content: center;
+}
+
+#contact {
+  background-color: rgb(249, 249, 249);
+}
+.style2{
+  border :0;
+  height: 2px;
+  background: rgb(0, 0, 0);
+  width:8%;
+  position: relative;
+  left: 45%;
+}
+
+.liste{
+  padding-left: 100px;
+  padding-right:100px ;
+}
+
+.paragraphe{
+  color: hsl(0,0%,22%);
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.paragraphebis {
+  color: hsl(0,0%,22%);
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 5px;
+}
+
+.paragraphe2{
+  color: hsl(0,0%,22%);
+  font-size: 25px;
+  text-align: center;
+}
+
+.paragraphe20{
+  color: hsl(0,0%,22%);
+  font-size: 18px;
+  text-align: center;
+}
+
+.tennis{
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 30px;
+  text-align: center;
+  align-items: center;
+  vertical-align: top;
+}
+
+.IUT {
+  float: right;
+  width : 300px;
+  border: 1px solid black;
+  margin-right: 50px;
+  margin-left:50px;
+  display: block;
+}
+
+#video{
+  display: inline-block;
+  text-align: center;
+}
+
+.div1{
+  text-align: center;
+  margin-right: 100px;
+  margin-left:100px;
+}
+
+.trail {
+  border: 1px solid black;
+  margin-right: 50px;
+  margin-left:50px;
+  display: block;
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-top: 2px solid rgb(0, 0, 0);
+}
+
+.linkedin {
+  /*border-radius: 50px;*/
+  width : 80px;
+  height : 80px;
+}
+
+.phone{
+  width: 61px;
+  margin-top: 20px;
+}
+
+.phonetxt{
+  color: #000;
+  margin-top: 20px;
+}
+
+.email{
+  width: 100px;
+  color: #000;
+  margin-top: 20px;
+}
+
+.email2{
+  width: 60px;
+  color: #000;
+  margin-top: 20px;
+}
+
+.socialN{
+  display: inline-block;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: center;
+}
+
+.socialN2{
+  display: inline-block;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: center;
+}
+
+.centerDIV{
+  align-items: center;
+  justify-content: center;
+}
+
+.contacter{
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.sousClasse{
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
+.soussousliste{
+  margin-left: 65px;
+}
+
+.paragraphe7{
+  color: rgb(96, 96, 96);
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+}
+
+.color {
+  float: right;
+  display: block;
+}
+
+.figcaption1{
+  padding-left: 50px;
+  font-size: 13px;
+  color: rgb(131, 131, 131);
+}
+
+.figcaption2{
+  font-size: 13px;
+  color: rgb(131, 131, 131);
+}
+
+.france{
+  width: 108px;
+}
+
+.allemagne{
+  width: 120px;
+}
+
+.angletterre{
+  width: 120px;
+}
+
+.sousclasse3{
+  padding-left: 30px;
+}
+
+.paragraphe8{
+  color: rgb(96, 96, 96);
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+}
+
+.colorlist{
+  color: #999;
+}
